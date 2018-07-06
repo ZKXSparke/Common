@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#f2f2f2</color>
+    <color name="background2">#F0F4F3</color>
+    <color name="background_grey">#efefef</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2c80d5</color>
+    <color name="blue_dark">#4b5e7c</color>
+    <color name="blue_light">#26abf0</color>
+    <color name="colorAccent">@color/main</color>
+    <color name="colorPrimary">@color/green_dark</color>
+    <color name="colorPrimaryDark">#444444</color>
+    <color name="green2">#B0CFCE</color>
+    <color name="green_dark">#3E6455</color>
+    <color name="green_light">#E9F4F4</color>
+    <color name="grey">#666666</color>
+    <color name="grey2">#bbbbbb</color>
+    <color name="grey3">#eeeeee</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="light_gray">#9B9B9B</color>
+    <color name="line">#bbbbbb</color>
+    <color name="main">#8ababa</color>
+    <color name="orange">#EFB74C</color>
+    <color name="shallow_grey">#bbbbbb</color>
+    <color name="status_bar">#444444</color>
+    <color name="text_black">#212121</color>
+    <color name="text_common">#808080</color>
+    <color name="text_white">#f8f8f8</color>
+    <color name="transparency_background">#a7878686</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#f8f8f8</color>
+    <declare-styleable name="DrawableTextView"><attr format="dimension" name="start_height"/><attr format="dimension" name="start_width"/><attr format="dimension" name="end_height"/><attr format="dimension" name="end_width"/><attr format="dimension" name="top_height"/><attr format="dimension" name="top_width"/><attr format="dimension" name="bottom_height"/><attr format="dimension" name="bottom_width"/></declare-styleable>
+    <declare-styleable name="FixedFlowLayout"><attr format="boolean" name="single_selected"/><attr format="integer" name="columns_per_line"/><attr format="dimension" name="horizontal_spacing"/><attr format="dimension" name="vertical_spacing"/><attr format="integer" name="child_gravity">
+            <flag name="center" value="17"/>
+            <flag name="top" value="48"/>
+            <flag name="bottom" value="80"/>
+            <flag name="start" value="3"/>
+            <flag name="end" value="5"/>
+            <flag name="center_vertical" value="16"/>
+            <flag name="center_horizontal" value="1"/>
+        </attr><attr format="integer" name="child_ratio_width"/><attr format="integer" name="child_ratio_height"/></declare-styleable>
+    <declare-styleable name="FixedFlowLayout_Layout"><attr format="integer" name="span_column"/></declare-styleable>
+    <declare-styleable name="FlexibleImageView"><attr format="integer" name="proportion_height"/><attr format="integer" name="proportion_width"/></declare-styleable>
+    <string name="app_name">common</string>
+    <style name="ActivityTransparent" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="FadeAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_alpha_out</item>
+    </style>
+    <style name="LoadingDialog" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="ProcessDialog" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="divider">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/line</item>
+    </style>
+</resources>
