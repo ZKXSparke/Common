@@ -76,6 +76,8 @@ fun ImageView.local(obj: Any, isCircleCrop: Boolean = false) {
 fun postEvent(event: Any) = EventBus.getDefault().post(event)
 fun postStickyEvent(event: Any) = EventBus.getDefault().postSticky(event)
 
+fun log(tag: String, log: Any?) = Logger.t(tag).i(log.toString())
 fun log(log: Any?) = Logger.i("Tag: " + log.toString())
+
 fun json(json: Any?) = Logger.json(json.toString())
 fun err(error: Any?) = Logger.e(error.toString())
